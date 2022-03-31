@@ -15,6 +15,8 @@
                 <th>Id</th>
                 <th>First name</th>
                 <th>Last name</th>
+                <th>Password</th>
+                <th colspan="2"><h3>Form with user</h3></th>
             </tr>
             </thead>
             <tbody>
@@ -22,6 +24,7 @@
                 <td th:text="${user.id}"></td>
                 <td th:text="${user.firstName}"></td>
                 <td th:text="${user.lastName}"></td>
+                <td th:text="${user.password}"></td>
                 <td><a th:href="@{user-update/{id}(id=${user.id})}">Edit</a></td>
                 <td><a th:href="@{user-delete/{id}(id=${user.id})}">Delete</a></td>
             </tr>
